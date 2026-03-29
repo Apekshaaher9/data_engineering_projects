@@ -3,7 +3,7 @@ resource "aws_s3_bucket" "weather_datalake" {
   force_destroy = true
 
   tags = {
-    Name        = "weather-datalake-projects"
+    Name        = "weather-datalake-projects_apeksha"
     Environment = "Dev"
   }
 
@@ -63,7 +63,7 @@ resource "aws_s3_bucket" "weather_datalake_scripts" {
   force_destroy = true
 
   tags = {
-    Name        = "weather-datalake-projects-scripts"
+    Name        = "weather-datalake-projects-scripts_apeksha"
     Environment = "Dev"
   }
 }
