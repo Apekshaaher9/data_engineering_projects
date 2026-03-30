@@ -33,3 +33,13 @@ variable "pipeline_name" {
   description = "Name of pipeline"
   default     = "pipeline-weather-data"
 }
+
+variable "aws_iam_user_arn_by_snowflake" {
+  default = "arn:aws:iam::apeksha99:user/arn:aws:iam::004878718171:user/f6pl1000-s"
+}
+variable "glue_aws_external_id_by_snowflake" {
+  default = "TTC06804_SFCRole=4_PntxpvnMTlB1mqhE9AIJ83M9g1M="
+}
+variable "storage_aws_external_id_by_snowflake" {
+  default = "TTC06804_SFCRole=4_/CDihYwSwoCCudSxr3wn4bvl4yM="
+}
