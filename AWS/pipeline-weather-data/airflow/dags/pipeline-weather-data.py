@@ -217,7 +217,7 @@ default_args = {
 
 # Instantiate a DAG
 with DAG(
-    dag_id='pipeline-wheater-data',
+    dag_id='pipeline-weather-data',
     default_args=default_args,
     description='DAG to run AWS services for the ETL weather Data',
     schedule_interval=None, 
