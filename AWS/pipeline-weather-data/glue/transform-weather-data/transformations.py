@@ -51,7 +51,7 @@ def process_timeseries_actual_data(spark:SparkSession, dfc:DynamicFrameCollectio
         "`forecast.forecastday.val.hour.val.chance_of_snow`"
         ]
 
-    timeseries_actual_data_df = timeseries_hour_df.select([col(c).alias(c.replace("forecast.forecastday.val.hour.val.","").replace("`","")) for c in selected_columns_hour_df])
+    timeseries_actual_data_df = timeseries_hour_df.select([col(c).alias(c.replace("forecast.forecastday.val.hour.val.","").replace("forecast.forecastday.val.", "").replace("`", "") for c in selected_columns_hour_df])
 
     location_df = location_df.select([col(c).alias(c.replace(".","_").replace("`","")) for c in selected_columns_location_df])
 
