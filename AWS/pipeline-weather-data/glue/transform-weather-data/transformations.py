@@ -35,7 +35,7 @@ def process_timeseries_actual_data(spark:SparkSession, dfc:DynamicFrameCollectio
                                     "`forecast.forecastday`"]
 
     selected_columns_hour_df = [
-        "id",
+        "`forecast.forecastday.val.id`",
         "`forecast.forecastday.val.hour.val.time`",
         "`forecast.forecastday.val.hour.val.temp_c`",
         "`forecast.forecastday.val.hour.val.wind_kph`",
