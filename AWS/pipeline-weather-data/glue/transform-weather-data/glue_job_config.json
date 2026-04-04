@@ -1,5 +1,5 @@
 {
-    "Role": "arn:aws:iam::545009864275:role/glue_role",
+    "Role": "arn:aws:iam::603306868045:role/glue_role",
     "Command": {
         "Name": "glueetl",
         "ScriptLocation": "s3://weather-datalake-projects-scripts-apeksha-26/pipeline-weather-data/glue/transform-weather-data/main.py"
