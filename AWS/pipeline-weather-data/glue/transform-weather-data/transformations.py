@@ -30,7 +30,7 @@ def process_timeseries_actual_data(spark:SparkSession, dfc:DynamicFrameCollectio
 
     logger.info(f"Start to process the timeseries data - {table_name}")
     timeseries_hour_df = dfc.select("root_forecast.forecastday.val.hour").toDF()
-
+    logger.info(f"timeseries_hour_df columns: {timeseries_hour_df.columns}")
     selected_columns_location_df = ["`location.id`",
                                     "`forecast.forecastday`"]
 
